@@ -5,3 +5,6 @@ def reverse_str(initial_string):
         final_string += initial_string[index - 2]
         index = index - 1
     return final_string
+
+if __name__ == '__main__':
+    print(reverse_str('Hello world! '))
