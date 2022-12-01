@@ -1,0 +1,15 @@
+image: python:3.6-alpine
+
+stages:
+  - test
+
+before_script:
+   - pip install pytest
+   - echo $CI_COMMIT_REF_NAME
+   - echo $CI_COMMIT_TAG
+
+regression_test:
+  stage: test
+  script:
+  - pytest tests\test_addition.py
+
