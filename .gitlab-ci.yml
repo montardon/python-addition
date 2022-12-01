@@ -11,5 +11,5 @@ before_script:
 regression_test:
   stage: test
   script:
-  - pytest tests\test_addition.py
+  - pytest tests\test.py
 
